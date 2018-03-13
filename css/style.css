@@ -1,0 +1,131 @@
+/*Bendras*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f1f4;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+/*Header*/
+.logo {
+  text-align: center;
+}
+
+nav {
+  background-color: #31a894;
+  font-size: 1.6rem;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+nav ul {
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  text-decoration: none;
+  display: block;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+
+/*Main*/
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.left {
+  width: 75%;
+  padding: 2rem 2rem;
+  float: left;
+}
+
+.left h2 {
+  background-color: #31a894;
+  padding: 1rem 2rem 1rem 0.5rem;
+  color: #fff;
+  font-size: 1.4em;
+  margin: 2rem 0;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.left p {
+  margin-bottom: 1rem;
+  line-height: 1.7rem;
+}
+
+.right {
+  background-color: #b7dcb1;
+  width: 25%;
+  float: left;
+  padding: 3rem 2rem;
+}
+
+.right h2 {
+  background-color: #31a894;
+  padding: 1rem 2rem 1rem 0.5rem;
+  margin: 1rem 0;
+  color: #fff;
+  font-size: 1.4em;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.right p {
+  line-height: 1.7rem;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 480px){
+  .container {
+    max-width: none;
+  }
+
+  nav li {
+    display: block;
+    padding: 2rem 0;
+  }
+
+  .left {
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+    text-align: left;
+  }
+
+  main {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .right {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .left, .right {
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
